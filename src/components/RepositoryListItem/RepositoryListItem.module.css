@@ -1,0 +1,104 @@
+.listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+  border-bottom: var(--border);
+  width: 100%;
+}
+.listItem:last-child {
+  border-bottom: none;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+.title {
+  font-size: var(--font-size-xs);
+  color: var(--primary-title-color);
+  font-weight: var(--font-weight-bold);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+}
+.description {
+  font-size: var(--font-size-xxs);
+  color: var(--primary-text-color);
+  font-weight: var(--font-weight-light);
+}
+.urlContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.8rem;
+}
+.url {
+  font-size: var(--font-size-xxs);
+  color: var(--primary-title-color);
+  font-weight: var(--font-weight-light);
+}
+.githubIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(/assets/github-small.svg) no-repeat;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 0.8rem;
+}
+.footerItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.4rem;
+  position: relative;
+}
+.footerItem::after {
+  content: "・";
+  display: block;
+  position: absolute;
+  right: -1.6rem;
+  color: var(--primary-text-color);
+  font-size: var(--font-size-xxs);
+  font-weight: var(--font-weight-light);
+}
+.footerItem:last-child::after {
+  display: none;
+}
+.footerItemIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(/assets/star.svg) no-repeat;
+}
+.footerText {
+  font-size: var(--font-size-xxs);
+  color: var(--primary-text-color);
+  font-weight: var(--font-weight-light);
+}
+.starIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(/assets/star.svg) no-repeat;
+}
+.forkIcon {
+  width: 1.2rem;
+  height: 1.2rem;
+  background: url(/assets/fork.svg) no-repeat;
+}

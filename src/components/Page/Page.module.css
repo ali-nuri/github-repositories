@@ -1,0 +1,7 @@
+.page {
+  height: auto;
+  max-width: var(--breakpoint-xl);
+  padding: var(--spacing-xxxxl) var(--spacing-s) var(--spacing-s)
+    var(--spacing-s);
+  margin: 0 auto;
+}
